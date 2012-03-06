@@ -379,6 +379,13 @@ uint8_t RF24Network::pipe_to_descendant( uint16_t node )
 
 /******************************************************************/
 
+uint16_t RF24Network::get_parent_node()
+{
+  return parent_node;
+}
+
+/******************************************************************/
+
 bool is_valid_address( uint16_t node )
 {
   bool result = true;

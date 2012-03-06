@@ -146,6 +146,12 @@ public:
    * @return Whether the message was successfully received 
    */
   bool write(RF24NetworkHeader& header,const void* message, size_t len);
+    
+  /**
+   * Get the parent node address.
+   * @return The logical address of the parent node. 
+   */
+  uint16_t get_parent_node();
 
 protected:
   void open_pipes(void);
